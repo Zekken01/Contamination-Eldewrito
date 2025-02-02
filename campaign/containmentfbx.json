@@ -1,0 +1,24 @@
+{
+	"MapGuid": "486e4f7b-b50d-4d0f-b1b7-7234e0a6200c",
+	"ScenarioFile": "containmentfbx",
+	"Title": {
+		"Neutral": "Contamination"
+	},
+	"Description": {
+		"Neutral": "Flood horde-mode in that one room from that one level."
+	},
+	"Images": {
+		"Large": "assets\\excession_imagetemplate_bloodgulch_large.png",
+		"Thumbnail": "assets\\excession_imagetemplate_bloodgulch_large.png",
+		"LoadingScreen": "assets\\1973-1657997501-63679489.png",
+		"TopDown": ""
+	},
+	"InsertionPoints": [],
+	"CampaignMapKind": "Default",
+	"CampaignMetagame": {
+		"IsNonScoring": false,
+		"ParTimeInSeconds": 0.0,
+		"AverageTimeInSeconds": 0.0,
+		"MaxTimeInSeconds": 0.0
+	}
+}

@@ -1,0 +1,51 @@
+"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
+
+# echo ==Set Variables...==
+SetVariable workingdir "F:\SteamLibrary\steamapps\workshop\content\976730\2900963998"
+SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
+
+# echo ==Set Caches...==
+UseAudioCache "F:\tagtool caches\audiocache"
+UseShaderCache "F:\tagtool caches\shadercache"
+
+# echo ==Creating Mod Package...==
+CreateModPackage 1 large
+Contamination
+Flood horde-mode in that one room from that one level. https://steamcommunity.com/sharedfiles/filedetails/?id=2900963998 Ported to ED by Zekken. To play make sure to use the campaign menu.
+I Can’t Think of a Good Username
+0.3
+Campaign
+
+
+OpenCacheFile workingdir\maps\containmentfbx.map
+NameBlamTag \objects\characters\grunt\fx\grunt_birthday_party.effect objects\characters\grunt\fx\grunt_birthday_party
+PortTag *.scnr
+Exit
+
+EditTag objects\levels\dlc\shared\small_shield_door\small_shield_door.collision_model
+foreach Regions foreach Permutations foreach Bsps foreach Geometry.Surfaces setfield Flags TwoSided,Invisible
+SaveTagChanges
+Exit
+
+EditTag levels\solo\containmentfbx\sounds\livinginsideyourwallsmuffled.sound
+ImportSound workingdir\LivingInsideYourWallsMuffled.wav
+SaveTagChanges
+Exit
+
+EditTag levels\solo\containmentfbx\bma\blow_me_away.sound
+ImportSound workingdir\blow_me_away.mp3
+SaveTagChanges
+Exit
+
+RunCommands "workingdir\Scripts\scoring.cmds"
+RunCommands "workingdir\Scripts\medals.cmds"
+
+UpdateMapFiles "workingdir" ForceUpdate
+
+GenerateCampaignFile
+
+AddModFiles workingdir\EDassets
+
+SaveModPackage
+
+Dumplog "workingdir"

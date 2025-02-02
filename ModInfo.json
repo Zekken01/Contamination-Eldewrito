@@ -1,0 +1,41 @@
+{
+	"ModIdentifier": {
+		"ModGuid": "e4db8a1d-9f76-480a-9627-3da6f77b7aad",
+		"HostedModIds": {
+			"SteamWorkshopId": 2900963998
+		}
+	},
+	"ModVersion": {
+		"Major": 1,
+		"Minor": 1,
+		"Patch": 0
+	},
+	"MinAppVersion": {
+		"Major": 1,
+		"Minor": 3385,
+		"Patch": 0
+	},
+	"MaxAppVersion": {
+		"Major": 1,
+		"Minor": 3385,
+		"Patch": 0
+	},
+	"Engine": "Halo3",
+	"Title": {
+		"Neutral": "Contamination"
+	},
+	"Description": {
+		"Neutral": "Flood horde-mode in that one room from that one level."
+	},
+	"InheritSharedFiles": "FromMCC",
+	"ModContents": {
+		"HasBackgroundVideos": false,
+		"HasNameplates": false
+	},
+	"GameModContents": {
+		"HasSharedFiles": false,
+		"HasCampaign": true,
+		"HasSpartanOps": false,
+		"HasController": false
+	}
+}

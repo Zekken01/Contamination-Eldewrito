@@ -1,0 +1,12 @@
+{
+	"CampaignGuid": "b973c9df-622c-4b65-8d44-c7c677b02191",
+	"Title": {
+		"Neutral": "Contamination"
+	},
+	"Description": {
+		"Neutral": "Flood horde-mode in that one room from that one level. "
+	},
+	"CampaignMaps": [
+		"campaign/containmentfbx.json"
+	]
+}
